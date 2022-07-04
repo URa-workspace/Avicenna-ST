@@ -4,8 +4,8 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css?_v=20220702210741"/>
-	<link rel="stylesheet" href="css/style.min.css?_v=20220702210741">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css?_v=20220704165650"/>
+	<link rel="stylesheet" href="css/style.min.css?_v=20220704165650">
 	<title>Головна</title>
 </head>
 <body>
@@ -47,16 +47,49 @@
 							<a href="#"><h4>Авіценна-ст</h4><span>центр естетичної стоматології</span></a>
 						</div>
 					</div>
-					<div class="header__item header__item--flex">
-						<ul class="header__menu tab-hide">
-							<li><a href="#">Головна</a></li>
-							<li><a href="#">Про нас</a></li>
-							<li><a href="#service">Послуги</a></li>
-							<li><a href="#">Наші ціни</a></li>
-							<li><a href="#">Корисна інформація</a></li>
-							<li><a href="#">Контакти</a></li>
+					<nav class="header__item menu header__item--flex">
+						<ul class="menu__list">
+							<li><a class="menu__link" href="/index.html#avicenna-st">Головна</a></li>
+							<li><a class="menu__link" href="/about.html">Про нас</a></li>
+							<li>
+								<a class="menu__link" href="/index.html#service">Послуги</a>
+								<span class="menu__arrow arrow"></span>
+								<ul class="sub-menu">
+									<li>
+										<a class="sub-menu__link" href="/therapy.html">Терапія</a>
+										<span class="sub-menu__arrow arrow"></span>
+										<ul class="sub-sub-menu">
+											<li><a class="sub-sub-menu__link" href="#">Лікування зубів під мікроскопом</a></li>
+										</ul>
+									</li>
+									<li><a class="sub-menu__link" href="/vector.html">"VECTOR"- терапія</a></li>
+									<li>
+										<a class="sub-menu__link" href="/ortodont.html">Ортодонтія</a>
+										<span class="sub-menu__arrow arrow"></span>
+										<ul class="sub-sub-menu">
+											<li><a class="sub-sub-menu__link" href="#">Зовнішні брекет-системи для зубів</a></li>
+											<li><a class="sub-sub-menu__link" href="#">Самолігуючі брекети</a></li>
+											<li><a class="sub-sub-menu__link" href="#">Лінгвальні брекети</a></li>
+											<li><a class="sub-sub-menu__link" href="#">Капи для вирівнювання зубів</a></li>
+										</ul>
+									</li>
+									<li><a class="sub-menu__link" href="/ortoped.html">Ортопедія</a></li>
+									<li><a class="sub-menu__link" href="/parodontology.html">Пародонтологія</a></li>
+									<li><a class="sub-menu__link" href="/impantology.html">Імплантологія</a></li>
+									<li><a class="sub-menu__link" href="/childrens-dentistry.html">Дитяча стоматологія</a></li>
+									<li><a class="sub-menu__link" href="/whitening.html">Відбілювання</a></li>
+									<li><a class="sub-menu__link" href="/professional-cleaning.html">Професійне чищення</a></li>
+									<li><a class="sub-menu__link" href="/cosmetology.html">Косметологія</a></li>
+									<li><a class="sub-menu__link" href="/surgery.html">Хірургія</a></li>
+									<li><a class="sub-menu__link" href="/laser-dentistry.html">Лазерна стоматологія</a></li>
+								</ul>
+							</li>
+							<li><a class="menu__link" href="/price.html">Наші ціни</a></li>
+							<li><a class="menu__link" href="/info.html">Корисна інформація</a></li>
+							<li><a class="menu__link" href="/contacts.html">Контакти</a></li>
+							<li><a class="menu__link tab-visible" href="#">Записатись на прийом</a></li>
 						</ul>
-					</div>
+					</nav>
 					<div class="header__item header__item--brdr-left">
 						<div class="button tab-hide">
 							<a href="#">Записатись<br/> на прийом</a>
@@ -70,12 +103,11 @@
 		</div>
 </header>
 	<main class="main">
-		<section class="section section__home home">
+		<section class="section section__home home" id="avicenna-st">
 			<div class="container home__container">
 				<div class="home__content">
 					<div  class="tooth">
 						<img src="img/45RS.gif" alt="tooth">
-						<!-- https://i.gifer.com/45RS.gif -->
 					</div>
 					<h1  class="home__title">
 						<span>Авіценна-ст</span><br/>
@@ -83,7 +115,6 @@
 					</h1>
 					<div class="home__info">
 						<p>&nbsp;&nbsp;&nbsp;Основна спеціалізація центру полягає у наданні стоматологічних послуг на професійному рівні. До наших фахівців звертаються з метою створити ідеальну посмішку, яка є доступною для кожного.</p>
-						<!-- <p>&nbsp;&nbsp;&nbsp;Центр оснащений сучасним стоматологічним обладнанням, яке гарантує не лише якість послуг, але й безболісність, і безпеку будь-яких процедур. Серед досягнень центру можна назвати пряму співпрацю із численними науковими установами, які займаються розробкою технологій у сфері стоматології, беруть активну участь у тестуванні нових матеріалів. Представники центру часто відвідують вітчизняні та зарубіжні форуми, виставки, присвячені цій тематиці.</p> -->
 						<div class="button button--transperent">
 							<a href="#">Записатись на консультацію</a>
 						</div>
@@ -458,6 +489,6 @@
 		</div>
 	</section>
 </footer>
-	<script src="js/app.min.js?_v=20220702210741"></script>
+	<script src="js/app.min.js?_v=20220704165650"></script>
 </body>
 </html>
