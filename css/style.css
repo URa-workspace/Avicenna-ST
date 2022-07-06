@@ -183,7 +183,7 @@ body .section {
   width: 100%;
   min-height: calc(100vh - var(--top-padding));
   padding: 50px 0;
-  margin-top: 2px;
+  margin-top: 5px;
 }
 
 body .container {
