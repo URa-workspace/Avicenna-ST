@@ -1333,9 +1333,9 @@ body .container {
 }
 
 .sub-menu__arrow {
-  border-left: 10px solid #f6f6f6;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
+  border-top: 10px solid #f6f6f6;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
 }
 
 body.mouse .menu__list > li:hover .menu__link {
@@ -1760,6 +1760,24 @@ body.touch .sticky-top {
 
 .article .article__link:visited {
   color: blue;
+}
+
+.contact-block__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact-block__col {
+  width: 33%;
+  border: 2px solid rgb(0, 122, 184);
+  border-radius: 2px;
 }
 
 .no-webp .page__heading--about {
@@ -2398,7 +2416,7 @@ body.touch .sticky-top {
   }
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 992px) {
   .tab-visible {
     display: none;
   }
@@ -2465,28 +2483,6 @@ body.touch .sticky-top {
 }
 
 @media screen and (max-width: 1140px) {
-  .tab-hide {
-    display: none !important;
-  }
-
-  .tab-visible {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-
-  .header {
-    top: 0;
-  }
-
-  .header__item--brdr-left {
-    padding: 10px 20px;
-  }
-
-  .menu__list {
-    display: block;
-  }
-
   .item__content h6 {
     font-size: 16px !important;
   }
@@ -2541,6 +2537,28 @@ body.touch .sticky-top {
 }
 
 @media screen and (max-width: 992px) {
+  .tab-hide {
+    display: none !important;
+  }
+
+  .tab-visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .header {
+    top: 0;
+  }
+
+  .header__item--brdr-left {
+    padding: 10px 20px;
+  }
+
+  .menu__list {
+    display: block;
+  }
+
   .page__row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2643,14 +2661,14 @@ body.touch .sticky-top {
     background: linear-gradient(90deg, rgba(0, 90, 135, 0.5) 0%, rgba(0, 124, 186, 0.7)) 100%, url("../img/profesiyna-chystka-bg.png") center/cover no-repeat; }
 
   .no-webp .page__heading--hirurgiya {
-    background: -webkit-gradient(linear, left top, right top, from(rgba(0, 90, 135, 0.5)), to(rgba(0, 124, 186, 0.7))) 100%, url("../img/hirurgiya-bg.png") center/cover no-repeat;
-    background: -o-linear-gradient(left, rgba(0, 90, 135, 0.5) 0%, rgba(0, 124, 186, 0.7)) 100%, url("../img/hirurgiya-bg.png") center/cover no-repeat;
-    background: linear-gradient(90deg, rgba(0, 90, 135, 0.5) 0%, rgba(0, 124, 186, 0.7)) 100%, url("../img/hirurgiya-bg.png") center/cover no-repeat; }
+    background: -webkit-gradient(linear, left top, right top, from(rgba(0, 90, 135, 0.5)), to(rgba(0, 124, 186, 0.7))) 100%, url("../img/hirurgiya-bg.png") right/cover no-repeat;
+    background: -o-linear-gradient(left, rgba(0, 90, 135, 0.5) 0%, rgba(0, 124, 186, 0.7)) 100%, url("../img/hirurgiya-bg.png") right/cover no-repeat;
+    background: linear-gradient(90deg, rgba(0, 90, 135, 0.5) 0%, rgba(0, 124, 186, 0.7)) 100%, url("../img/hirurgiya-bg.png") right/cover no-repeat; }
 
   .no-webp .page__heading--lazerna-stomatology {
-    background: -webkit-gradient(linear, left top, right top, from(rgba(0, 90, 135, 0.5)), to(rgba(0, 124, 186, 0.7))) 100%, url("../img/lazer-bg.png") center/cover no-repeat;
-    background: -o-linear-gradient(left, rgba(0, 90, 135, 0.5) 0%, rgba(0, 124, 186, 0.7)) 100%, url("../img/lazer-bg.png") center/cover no-repeat;
-    background: linear-gradient(90deg, rgba(0, 90, 135, 0.5) 0%, rgba(0, 124, 186, 0.7)) 100%, url("../img/lazer-bg.png") center/cover no-repeat; }
+    background: -webkit-gradient(linear, left top, right top, from(rgba(0, 90, 135, 0.5)), to(rgba(0, 124, 186, 0.7))) 100%, url("../img/lazer-bg.png") right/cover no-repeat;
+    background: -o-linear-gradient(left, rgba(0, 90, 135, 0.5) 0%, rgba(0, 124, 186, 0.7)) 100%, url("../img/lazer-bg.png") right/cover no-repeat;
+    background: linear-gradient(90deg, rgba(0, 90, 135, 0.5) 0%, rgba(0, 124, 186, 0.7)) 100%, url("../img/lazer-bg.png") right/cover no-repeat; }
 
   .no-webp .page__heading--about {
     background: -webkit-gradient(linear, left top, right top, from(rgba(0, 90, 135, 0.5)), to(rgba(0, 124, 186, 0.7))) 100%, url("../img/about-front.jpg") right/cover no-repeat;
@@ -2861,12 +2879,12 @@ body.touch .sticky-top {
 
 @media screen and (max-width: 768px) {
 
-  .webp .page__heading--hirurgiya { background: -webkit-gradient(linear, left top, right top, from(rgba(0, 90, 135, 0.5)), to(rgba(0, 124, 186, 0.7))) 100%, url(../img/hirurgiya-bg.webp) center/cover no-repeat; background: -o-linear-gradient(left, rgba(0, 90, 135, 0.5) 0%, rgba(0, 124, 186, 0.7)) 100%, url(../img/hirurgiya-bg.webp) center/cover no-repeat; background: linear-gradient(90deg, rgba(0, 90, 135, 0.5) 0%, rgba(0, 124, 186, 0.7)) 100%, url(../img/hirurgiya-bg.webp) center/cover no-repeat; }
+  .webp .page__heading--hirurgiya { background: -webkit-gradient(linear, left top, right top, from(rgba(0, 90, 135, 0.5)), to(rgba(0, 124, 186, 0.7))) 100%, url(../img/hirurgiya-bg.webp) right/cover no-repeat; background: -o-linear-gradient(left, rgba(0, 90, 135, 0.5) 0%, rgba(0, 124, 186, 0.7)) 100%, url(../img/hirurgiya-bg.webp) right/cover no-repeat; background: linear-gradient(90deg, rgba(0, 90, 135, 0.5) 0%, rgba(0, 124, 186, 0.7)) 100%, url(../img/hirurgiya-bg.webp) right/cover no-repeat; }
 }
 
 @media screen and (max-width: 768px) {
 
-  .webp .page__heading--lazerna-stomatology { background: -webkit-gradient(linear, left top, right top, from(rgba(0, 90, 135, 0.5)), to(rgba(0, 124, 186, 0.7))) 100%, url(../img/lazer-bg.webp) center/cover no-repeat; background: -o-linear-gradient(left, rgba(0, 90, 135, 0.5) 0%, rgba(0, 124, 186, 0.7)) 100%, url(../img/lazer-bg.webp) center/cover no-repeat; background: linear-gradient(90deg, rgba(0, 90, 135, 0.5) 0%, rgba(0, 124, 186, 0.7)) 100%, url(../img/lazer-bg.webp) center/cover no-repeat; }
+  .webp .page__heading--lazerna-stomatology { background: -webkit-gradient(linear, left top, right top, from(rgba(0, 90, 135, 0.5)), to(rgba(0, 124, 186, 0.7))) 100%, url(../img/lazer-bg.webp) right/cover no-repeat; background: -o-linear-gradient(left, rgba(0, 90, 135, 0.5) 0%, rgba(0, 124, 186, 0.7)) 100%, url(../img/lazer-bg.webp) right/cover no-repeat; background: linear-gradient(90deg, rgba(0, 90, 135, 0.5) 0%, rgba(0, 124, 186, 0.7)) 100%, url(../img/lazer-bg.webp) right/cover no-repeat; }
 }
 
 @media screen and (max-width: 768px) {
